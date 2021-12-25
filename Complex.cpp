@@ -40,17 +40,6 @@ void Complex::calculatePhase()
 			phase = atan2(imaginaryVal, realVal) * 180 / PI;
 		else
 			phase = 360 + atan2(imaginaryVal, realVal) * 180 / PI;
-		
-		/*if (imaginaryVal >= 0 && realVal > 0)
-			quadrant = 1;
-		else if (imaginaryVal >= 0 && realVal < 0)
-			quadrant = 1;
-		else if (imaginaryVal < 0 && realVal < 0)
-			quadrant = 1;
-		else
-			quadrant = 1;
-
-		phase = (quadrant * atan2(imaginaryVal, realVal)) * 180 / PI;*/
 	}
 }
 
