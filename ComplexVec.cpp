@@ -30,8 +30,8 @@ void ComplexVec::printElements() const {
 
 /* Appending to complex vector */
 void ComplexVec::insert(const Complex& argComplex){
-	Vector.push_back(argComplex);                       // Append at the end
-	vectorSize++;									    // Increase vector size
+	Vector.push_back(argComplex);                       		// Append at the end
+	vectorSize++;							// Increase vector size
 }
 
 /* Vecotr  index acces using [] implementation*/
