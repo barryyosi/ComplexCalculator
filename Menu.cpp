@@ -12,26 +12,26 @@ Menu::Menu() {}
 /* Input validation method */
 void Menu::getInput( int& idx, const char* param, const int vecSize) {
 	
-	bool validIdx = 0;												// validIdx = 0 if not valid, 1 if valid
+	bool validIdx = 0;								// validIdx = 0 if not valid, 1 if valid
 	
 	cout << "Index range: 0.." << vecSize-1 << endl;				// Printing avaiable indexes range
 
-	while (!validIdx) {												// Get index input from user until validIdx is 1
-		cout << "Insert index of " << param << " number: "; // Desired index input
+	while (!validIdx) {								// Get index input from user until validIdx is 1
+		cout << "Insert index of " << param << " number: "; 			// Desired index input
 		cin >> idx;
 		cout << "\n";
-		if (idx >= vecSize || idx < 0)								// Validity condition, if inputed index is in range of vector size
+		if (idx >= vecSize || idx < 0)						// Validity condition, if inputed index is in range of vector size
 			cout << "Index not in range, try again." << endl;
 		else
-			validIdx = 1;											// Terminate loop
+			validIdx = 1;							// Terminate loop
 	
 	}
 }
 
 void Menu::mainMenu() {
 	
-	bool runMenu = 1;									// Menu loop running-flag
-	int choice;											// holds user menu choice
+	bool runMenu = 1;								// Menu loop running-flag
+	int choice;									// holds user menu choice
 	int firstIdx, secondIdx;							// hold vector accesing parameters
 	
 	while (runMenu) {
@@ -60,8 +60,8 @@ void Menu::mainMenu() {
 			cin >> image;
 			cout << "\n";
 
-			Complex newComplex(real, image);			// New copmlex number with inputed parameters (real, imaginary valuess)
-			ComplexVec.insert(newComplex);				// Appended to ComplexVec
+			Complex newComplex(real, image);				// New copmlex number with inputed parameters (real, imaginary valuess)
+			ComplexVec.insert(newComplex);					// Appended to ComplexVec
 			cout << newComplex << " appended to the complex vector." << endl;
 			break;
 		}
@@ -160,7 +160,7 @@ void Menu::mainMenu() {
 			runMenu = 0;	// Turn off menu loop running flag
 			break;
 		
-		default:			// If invalid choice has been made:
+		default:		// If invalid choice has been made:
 			cout << "Invalid input, try again." << endl;
 			break;
 
