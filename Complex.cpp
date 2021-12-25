@@ -86,9 +86,9 @@ Complex Complex::operator/(const Complex& argComplex) const {
 	return *this;
 }
 	else {
-		Complex argConjugate(argComplex.realVal, -argComplex.imaginaryVal);     // Initing argument conjugate to multiply numerator and denominator with
-		Complex numerator = *this * argConjugate;								// Numerator multiplication result: complex number
-		Complex denominator = argComplex * argConjugate;						// Denominator multiplication result - real number
+		Complex argConjugate(argComplex.realVal, -argComplex.imaginaryVal);     		// Initing argument conjugate to multiply numerator and denominator with
+		Complex numerator = *this * argConjugate;						// Numerator multiplication result: complex number
+		Complex denominator = argComplex * argConjugate;					// Denominator multiplication result - real number
 		Complex result;
 		result.realVal = numerator.realVal / denominator.realVal;				// Dividing numerator real and imaginary part with the real denominator
 		result.imaginaryVal = numerator.imaginaryVal / denominator.realVal;
