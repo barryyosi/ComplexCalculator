@@ -14,7 +14,7 @@ ComplexVec::ComplexVec(){
 /* Printing Complex vector's elements */
 void ComplexVec::printElements() const {
 	
-	int iter = 0;						    // iter is used to index vectors' elements
+	int iter = 0;						    // iter is used to index vector's elements
 	if (vectorSize == 0)
 		cout << "Vector is empty!" << endl;
 	else
