@@ -1,6 +1,4 @@
-/* Assignment C++: 2
-   Author: Barry Yosilevich, ID: 208725218
-   */
+
 #include "Menu.h"
 #include "ComplexVec.h"
 #include "Complex.h"
